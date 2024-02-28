@@ -2,17 +2,26 @@
 
 .greeting {
 	margin-top: 20px;
-	display: flex;
+	display: grid;
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 40px;
 	background-color: darken($primary-color, 10%);
+	grid-template-columns: 3fr 2fr;
+	gap: 10px;
 
-	a {
-		color: $quinary-color;
-		text-decoration: none;
+	.greeting__text {
+		&--link {
+			color: $quinary-color;
+			text-decoration: none;
+		}
 	}
-		@media screen and (max-width: 768px) {
+
+	.greeting__profile-img {
+		width: 100%;
+	}
+
+	@media screen and (max-width: 768px) {
 		img {
 			display: none;
 		}
