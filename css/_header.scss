@@ -1,0 +1,44 @@
+@use './variables.scss' as *;
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 40px;
+	background-color: darken($quaternary-color, 10%);
+
+	h1 {
+		color: $quinary-color;
+		font-size: 24px;
+	}
+
+	.nav {
+		.nav__list {
+			list-style: none;
+			display: flex;
+
+			.nav__list-item {
+				padding: 0 15px;
+
+				a {
+					text-decoration: none;
+					color: black;
+				}
+			}
+		}
+
+		.nav__icon {
+			display: none;
+		}
+
+		@media screen and (max-width: 480px) {
+			.nav__list {
+				display: none;
+			}
+
+			.nav__icon {
+				display: block;
+			}
+		}
+	}
+}

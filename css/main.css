@@ -1,3 +1,46 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: #e7d5a7;
+}
+header h1 {
+  color: #bc4749;
+  font-size: 24px;
+}
+header .nav .nav__list {
+  list-style: none;
+  display: flex;
+}
+header .nav .nav__list .nav__list-item {
+  padding: 0 15px;
+}
+header .nav .nav__list .nav__list-item a {
+  text-decoration: none;
+  color: black;
+}
+header .nav .nav__icon {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  header .nav .nav__list {
+    display: none;
+  }
+  header .nav .nav__icon {
+    display: block;
+  }
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", "sans-serif";
+  background-color: #f2e8cf;
+}
 
 /*# sourceMappingURL=main.css.map */
