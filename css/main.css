@@ -1,12 +1,30 @@
+.greeting {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: #c8cbbf;
+}
+.greeting a {
+  color: #5f7470;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .greeting img {
+    display: none;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 40px;
-  background-color: #e7d5a7;
+  background-color: #c8cbbf;
 }
 header h1 {
-  color: #bc4749;
+  color: #5f7470;
   font-size: 24px;
 }
 header .nav .nav__list {
@@ -18,7 +36,7 @@ header .nav .nav__list .nav__list-item {
 }
 header .nav .nav__list .nav__list-item a {
   text-decoration: none;
-  color: black;
+  color: #5f7470;
 }
 header .nav .nav__icon {
   display: none;
@@ -39,8 +57,13 @@ header .nav .nav__icon {
 }
 
 body {
+  color: #5f7470;
   font-family: "montserrat", "sans-serif";
-  background-color: #f2e8cf;
+  background-color: #e0e2db;
+}
+
+main {
+  padding: 0 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

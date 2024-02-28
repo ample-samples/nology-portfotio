@@ -1,3 +1,4 @@
+@use './greeting.scss' as *;
 @use './header.scss' as *;
 @use './variables.scss' as *;
 
@@ -8,8 +9,13 @@
 }
 
 body {
+	color: $quinary-color;
 	font-family: 'montserrat', 'sans-serif';
-	background-color: $quaternary-color;
+	background-color: $primary-color;
+}
+
+main {
+	padding: 0 40px;
 }
 
 // mobile < 480px

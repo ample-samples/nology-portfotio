@@ -1,0 +1,20 @@
+@use './variables.scss' as *;
+
+.greeting {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 40px;
+	background-color: darken($primary-color, 10%);
+
+	a {
+		color: $quinary-color;
+		text-decoration: none;
+	}
+		@media screen and (max-width: 768px) {
+		img {
+			display: none;
+		}
+	}
+}

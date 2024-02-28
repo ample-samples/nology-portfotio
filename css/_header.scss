@@ -5,7 +5,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 40px;
-	background-color: darken($quaternary-color, 10%);
+	background-color: darken($primary-color, 10%);
 
 	h1 {
 		color: $quinary-color;
@@ -22,7 +22,7 @@ header {
 
 				a {
 					text-decoration: none;
-					color: black;
+					color: $quinary-color;
 				}
 			}
 		}
