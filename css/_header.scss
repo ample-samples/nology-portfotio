@@ -7,9 +7,9 @@ header {
 	padding: 30px 40px;
 	background-color: darken($primary-color, 10%);
 
-	h1 {
+	.name {
 		color: $quinary-color;
-		font-size: 24px;
+		font-size: 22px;
 	}
 
 	.nav {
@@ -18,11 +18,13 @@ header {
 			display: flex;
 
 			.nav__list-item {
-				padding: 0 15px;
+				padding: 0 0 0 15px;
 
 				a {
+					font-size: 12px;
 					text-decoration: none;
 					color: $quinary-color;
+					font-weight: 500;
 				}
 			}
 		}

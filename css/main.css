@@ -28,20 +28,22 @@ header {
   padding: 30px 40px;
   background-color: #c8cbbf;
 }
-header h1 {
+header .name {
   color: #5f7470;
-  font-size: 24px;
+  font-size: 22px;
 }
 header .nav .nav__list {
   list-style: none;
   display: flex;
 }
 header .nav .nav__list .nav__list-item {
-  padding: 0 15px;
+  padding: 0 0 0 15px;
 }
 header .nav .nav__list .nav__list-item a {
+  font-size: 12px;
   text-decoration: none;
   color: #5f7470;
+  font-weight: 500;
 }
 header .nav .nav__icon {
   display: none;
