@@ -12,6 +12,9 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #b8bdb5 40%);
   display: inline;
 }
+.greeting .greeting__text {
+  text-align: center;
+}
 .greeting .greeting__text--secondary {
   margin: 60px 0 15px 0;
 }
@@ -36,8 +39,11 @@
   object-fit: cover;
 }
 @media screen and (max-width: 768px) {
-  .greeting .greeting {
+  .greeting {
     grid-template-columns: 1fr;
+  }
+  .greeting .greeting__text--primary, .greeting .greeting__text--secondary {
+    text-align: left;
   }
   .greeting .greeting__profile-img {
     display: none;
