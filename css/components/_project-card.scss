@@ -21,7 +21,7 @@
 			width: 90%;
 			height: 80%;
 			object-fit: cover;
-		object-position: 100% 100%;
+			object-position: 100% 100%;
 		}
 	}
 
@@ -38,11 +38,23 @@
 			margin-bottom: 25px;
 		}
 
-		.card__link {
-			margin-right: 35px;
-			text-decoration: none;
-			color: inherit;
-			font-weight: bold;
+		.card__link-container{
+				display: flex;
+				align-items: center;
+
+			.card__link {
+				display: flex;
+				align-items: center;
+				a {
+					text-decoration: none;
+					color: inherit;
+					font-weight: bold;
+					margin-right: 10px;
+				}
+
+				margin-right: 35px;
+			}
 		}
+
 	}
 }
