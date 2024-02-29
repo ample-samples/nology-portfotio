@@ -7,6 +7,7 @@
   background-color: #e0e2db;
   grid-template-columns: 3fr fit-content(35%);
   gap: 10px;
+  max-width: 2100px;
 }
 .greeting .offset-highlight {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #b8bdb5 40%);
@@ -56,6 +57,7 @@ header {
   align-items: center;
   padding: 30px 40px;
   background-color: #e0e2db;
+  width: 100%;
 }
 header .name {
   color: #5f7470;
@@ -141,11 +143,11 @@ header .nav .nav__icon {
   text-align: center;
 }
 .projects .card-container {
-  display: grid;
-  grid-template-rows: repeat(auto-fit, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   gap: 60px;
   margin-top: 40px;
-  max-width: 1100px;
 }
 
 .card {
@@ -223,6 +225,7 @@ footer {
   margin-top: 40px;
   background-color: #1a201f;
   padding: 40px 0;
+  width: 100%;
 }
 footer .footer__socials-container {
   display: flex;
@@ -244,7 +247,13 @@ footer .footer__text {
 body {
   color: #5f7470;
   font-family: "montserrat", "sans-serif";
-  background-color: #f8f9f7;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+body main {
+  max-width: 2100px;
 }
 body h2 {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #b8bdb5 40%);

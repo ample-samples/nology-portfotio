@@ -11,6 +11,7 @@
 	background-color: darken($primary-color, 10%);
 	grid-template-columns: 3fr fit-content(35%);
 	gap: 10px;
+	max-width: 2100px;
 
 	.offset-highlight {
 		@include offset-highlight;
