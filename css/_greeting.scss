@@ -5,11 +5,11 @@
 .greeting {
 	margin-top: 20px;
 	display: grid;
-	justify-content: space-between;
 	align-items: center;
+	justify-items: center;
 	padding: 30px 40px 100px 40px;
 	background-color: darken($primary-color, 10%);
-	grid-template-columns: 3fr fit-content(35%);
+	grid-template-columns: 1fr fit-content(35%);
 	gap: 10px;
 	max-width: 2100px;
 
@@ -19,6 +19,8 @@
 
 	.greeting__text {
 		text-align: center;
+		max-width: 800px;
+
 		&--secondary {
 			margin: 60px 0 15px 0;
 		}
@@ -42,12 +44,13 @@
 	}
 
 	@media screen and (max-width: 768px) {
-			grid-template-columns: 1fr;
+		grid-template-columns: 1fr;
 
 		.greeting__text {
+
 			&--primary,
 			&--secondary {
-			text-align: left;
+				text-align: left;
 			}
 		}
 
