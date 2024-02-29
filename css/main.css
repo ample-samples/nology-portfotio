@@ -9,7 +9,8 @@
   gap: 10px;
 }
 .greeting .offset-highlight {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #e0e2db 40%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #889696 40%);
+  display: inline;
 }
 .greeting .greeting__text--secondary {
   margin: 60px 0 15px 0;
@@ -103,7 +104,7 @@ header .nav .nav__icon {
   margin-bottom: 70px;
 }
 .skills .skills__container {
-  margin: 0 auto;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   max-width: 1100px;
@@ -232,6 +233,10 @@ body {
   color: #5f7470;
   font-family: "montserrat", "sans-serif";
   background-color: #e0e2db;
+}
+body h2 {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #889696 40%);
+  display: inline;
 }
 
 main {

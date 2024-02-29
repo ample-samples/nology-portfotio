@@ -6,6 +6,7 @@
 @use './components/project-card.scss' as *;
 @use './about.scss' as *;
 @use './footer.scss' as *;
+@use './components/_offset-highlight.scss' as *;
 
 * {
 	margin: 0;
@@ -17,6 +18,10 @@ body {
 	color: $quinary-color;
 	font-family: 'montserrat', 'sans-serif';
 	background-color: $primary-color;
+
+	h2 {
+		@include offset-highlight;
+	}
 }
 
 main {
