@@ -1,0 +1,13 @@
+.about {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.about__profile-img {
+		margin: 70px 0;
+		height: 300px;
+		width: 80%;
+		object-fit: cover;
+	}
+}
