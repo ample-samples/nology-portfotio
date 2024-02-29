@@ -130,6 +130,7 @@ header .nav .nav__icon {
     justify-items: center;
     display: grid;
     row-gap: 40px;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -181,12 +182,13 @@ header .nav .nav__icon {
 }
 .card .card__content .card__content-title {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: inline-block;
 }
 .card .card__content .card__content-text {
   margin-bottom: 25px;
   color: #93a6a3;
+  line-height: 1.5;
 }
 .card .card__content .card__link-container {
   display: flex;
@@ -210,6 +212,7 @@ header .nav .nav__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 2;
 }
 .about .about__title {
   font-size: 50px;

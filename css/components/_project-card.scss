@@ -34,13 +34,14 @@
 
 		.card__content-title {
 			font-size: 36px;
-			margin-bottom: 20px;
+			margin-bottom: 15px;
 			display: inline-block;
 		}
 
 		.card__content-text {
 			margin-bottom: 25px;
 			color: lighten($quinary-color, 20%);
+			line-height: 1.5;
 		}
 
 		.card__link-container{
