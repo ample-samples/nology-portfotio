@@ -50,6 +50,9 @@ header {
 header .name {
   color: #5f7470;
   font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 header .nav .nav__list {
   list-style: none;
