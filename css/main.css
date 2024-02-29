@@ -169,10 +169,26 @@ header .nav .nav__icon {
 }
 .about .about__profile-img {
   margin: 70px 0;
-  height: 300px;
+  height: 100%;
   width: 80%;
-  max-width: 500px;
+  max-width: 400px;
   object-fit: cover;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #1a201f;
+  padding: 40px 0;
+}
+footer .footer__socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+footer .footer__text {
+  text-align: center;
+  color: #e0e2db;
 }
 
 * {

@@ -1,0 +1,19 @@
+@use '_variables.scss' as *;
+
+footer {
+	margin-top: 40px;
+	background-color: darken($quinary-color, 30%); 
+	padding: 40px 0;
+
+	.footer__socials-container {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		margin-bottom: 20px;
+	}
+
+	.footer__text {
+		text-align: center;
+		color: $primary-color;
+	}
+}
