@@ -1,0 +1,5 @@
+@use '../_variables.scss' as *;
+
+@mixin offset-highlight {
+	  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, $primary-color 40%);
+}
