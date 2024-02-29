@@ -128,7 +128,7 @@ header .nav .nav__icon {
 .projects .card-container {
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
-  gap: 60px;
+  gap: 90px;
   margin-top: 40px;
   max-width: 1100px;
 }
@@ -166,10 +166,11 @@ header .nav .nav__icon {
 .card .card__content .card__content-text {
   margin-bottom: 25px;
 }
-.card .card__content .card__button {
+.card .card__content .card__link {
   margin-right: 35px;
   text-decoration: none;
   color: inherit;
+  font-weight: bold;
 }
 
 .about {
