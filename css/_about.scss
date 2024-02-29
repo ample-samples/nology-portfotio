@@ -1,8 +1,10 @@
 .about {
 	margin-top: 150px;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	text-align: center;
+	grid-template-columns: 1fr;
+	justify-content: center;
 	align-items: center;
 	line-height: 2;
 
@@ -11,10 +13,33 @@
 	}
 
 	.about__profile-img {
-		margin: 70px 0;
+		margin: 70px auto;
 		height: 450px;
 		width: 80%;
 		max-width: 400px;
 		object-fit: cover;
+	}
+
+	@media (min-width: 768px) {
+		grid-template-areas:
+		"title img"
+		"text img";
+		grid-template-columns: 3fr 2fr;
+		max-width: 1600px;
+		margin: 100px auto;
+
+		.about__title {
+			text-align: left;
+			align-self: flex-end;
+			grid-area: title;
+		}
+		.about__text {
+			align-self: flex-start;
+			text-align: left;
+			grid-area: text;
+		}
+		.about__profile-img {
+			grid-area: img;
+		}
 	}
 }
