@@ -1,4 +1,5 @@
 @use './variables.scss' as *;
+@use './components/_boxed-button.scss' as *;
 
 .greeting {
 	margin-top: 20px;
@@ -7,7 +8,7 @@
 	align-items: center;
 	padding: 30px 40px 100px 40px;
 	background-color: darken($primary-color, 10%);
-	grid-template-columns: 3fr fit-content(40%);
+	grid-template-columns: 3fr fit-content(35%);
 	gap: 10px;
 
 	.greeting__text {
@@ -21,16 +22,9 @@
 		}
 
 		&--link {
-			margin: 0 auto;
-			align-self: center;
-			color: $quinary-color;
-			text-decoration: none;
-			background-color: $primary-color;
+			@include boxed-button;
 			padding: 20px 26px;
-			border: 2px solid $quinary-color;
-			border-radius: 5px;
 			box-shadow: 2px 2px 0 $quinary-color;
-			text-wrap: nowrap;
 		}
 	}
 

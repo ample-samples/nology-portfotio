@@ -5,7 +5,7 @@
   align-items: center;
   padding: 30px 40px 100px 40px;
   background-color: #c8cbbf;
-  grid-template-columns: 3fr fit-content(40%);
+  grid-template-columns: 3fr fit-content(35%);
   gap: 10px;
 }
 .greeting .greeting__text--secondary {
@@ -16,16 +16,15 @@
   margin-bottom: 70px;
 }
 .greeting .greeting__text--link {
-  margin: 0 auto;
   align-self: center;
   color: #5f7470;
   text-decoration: none;
   background-color: #e0e2db;
-  padding: 20px 26px;
   border: 2px solid #5f7470;
   border-radius: 5px;
-  box-shadow: 2px 2px 0 #5f7470;
   text-wrap: nowrap;
+  padding: 20px 26px;
+  box-shadow: 2px 2px 0 #5f7470;
 }
 .greeting .greeting__profile-img {
   width: 100%;
@@ -57,13 +56,25 @@ header .nav .nav__list {
   display: flex;
 }
 header .nav .nav__list .nav__list-item {
-  padding-left: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
 }
 header .nav .nav__list .nav__list-item a {
   font-size: 12px;
   text-decoration: none;
   color: #5f7470;
   font-weight: 500;
+}
+header .nav .nav__list .nav__list-item:last-child {
+  align-self: center;
+  color: #5f7470;
+  text-decoration: none;
+  background-color: #e0e2db;
+  border: 2px solid #5f7470;
+  border-radius: 5px;
+  text-wrap: nowrap;
+  padding: 5px 5px;
 }
 header .nav .nav__icon {
   display: none;
@@ -92,7 +103,7 @@ header .nav .nav__icon {
   max-width: 1100px;
 }
 .skills .skills__container img {
-  fill: red;
+  filter: red;
   width: 80px;
   height: 80px;
 }
