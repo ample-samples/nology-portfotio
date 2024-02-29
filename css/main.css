@@ -3,14 +3,27 @@
   display: grid;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 40px;
+  padding: 30px 40px 100px 40px;
   background-color: #c8cbbf;
   grid-template-columns: 3fr 2fr;
   gap: 10px;
 }
+.greeting .greeting__text--secondary {
+  margin: 60px 0 15px 0;
+}
+.greeting .greeting__text--primary {
+  font-size: 48px;
+  margin-bottom: 70px;
+}
 .greeting .greeting__text--link {
   color: #5f7470;
   text-decoration: none;
+  background-color: #d2d4c8;
+  padding: 20px 26px;
+  border: 2px solid #5f7470;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 #5f7470;
+  text-wrap: nowrap;
 }
 .greeting .greeting__profile-img {
   width: 100%;
@@ -37,7 +50,7 @@ header .nav .nav__list {
   display: flex;
 }
 header .nav .nav__list .nav__list-item {
-  padding: 0 0 0 15px;
+  padding-left: 10px;
 }
 header .nav .nav__list .nav__list-item a {
   font-size: 12px;

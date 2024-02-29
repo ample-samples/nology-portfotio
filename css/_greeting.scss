@@ -5,15 +5,30 @@
 	display: grid;
 	justify-content: space-between;
 	align-items: center;
-	padding: 30px 40px;
+	padding: 30px 40px 100px 40px;
 	background-color: darken($primary-color, 10%);
 	grid-template-columns: 3fr 2fr;
 	gap: 10px;
 
 	.greeting__text {
+		&--secondary {
+			margin: 60px 0 15px 0;
+		}
+
+		&--primary {
+			font-size: 48px;
+			margin-bottom: 70px;
+		}
+
 		&--link {
 			color: $quinary-color;
 			text-decoration: none;
+			background-color: $secondary-color;
+			padding: 20px 26px;
+			border: 2px solid $quinary-color;
+			border-radius: 5px;
+			box-shadow: 2px 2px 0 $quinary-color;
+			text-wrap: nowrap;
 		}
 	}
 
