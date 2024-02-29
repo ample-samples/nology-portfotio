@@ -114,6 +114,13 @@ header .nav .nav__icon {
   margin-top: 80px;
   text-align: center;
 }
+.projects .card-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 60px;
+  margin-top: 40px;
+  max-width: 1100px;
+}
 
 .card {
   max-width: 500px;
@@ -129,40 +136,20 @@ header .nav .nav__icon {
   object-fit: cover;
 }
 .card .card__content {
-  padding: 40px 0;
+  padding-top: 40px;
 }
 .card .card__content .card__content-title {
-  font-size: 50px;
+  font-size: 36px;
   margin-bottom: 20px;
   display: inline-block;
 }
 .card .card__content .card__content-text {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .card .card__content .card__button {
-  padding: 13px 30px;
+  margin-right: 35px;
   text-decoration: none;
-}
-.card .card__content .card__button--dark {
-  background: #fff;
-  color: #000;
-  background: #000;
-  color: #FFF;
-}
-.card .card__content .card__button--dark:hover {
-  background: #FFF;
-  color: #000;
-}
-.card .card__content .card__button--light {
-  background: #fff;
-  color: #000;
-  padding: 12px 30px;
-  border: 1px solid #000;
-  margin-left: 20px;
-}
-.card .card__content .card__button--light:hover {
-  background: #000;
-  color: #FFF;
+  color: inherit;
 }
 
 * {
@@ -178,7 +165,7 @@ body {
 }
 
 main {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
