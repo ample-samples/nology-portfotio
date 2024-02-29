@@ -28,6 +28,10 @@
 	.card__content {
 		padding-top: 40px;
 
+		.card__content-subtitle {
+			color: darken($secondary-color, 30%);
+		}
+
 		.card__content-title {
 			font-size: 36px;
 			margin-bottom: 20px;
@@ -36,6 +40,7 @@
 
 		.card__content-text {
 			margin-bottom: 25px;
+			color: lighten($quinary-color, 20%);
 		}
 
 		.card__link-container{

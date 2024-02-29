@@ -4,12 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 40px 100px 40px;
-  background-color: #c8cbbf;
+  background-color: #e0e2db;
   grid-template-columns: 3fr fit-content(35%);
   gap: 10px;
 }
 .greeting .offset-highlight {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #889696 40%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #b8bdb5 40%);
   display: inline;
 }
 .greeting .greeting__text--secondary {
@@ -23,7 +23,7 @@
   align-self: center;
   color: #5f7470;
   text-decoration: none;
-  background-color: #e0e2db;
+  background-color: #f8f9f7;
   border: 2px solid #5f7470;
   border-radius: 5px;
   text-wrap: nowrap;
@@ -49,7 +49,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 40px;
-  background-color: #c8cbbf;
+  background-color: #e0e2db;
 }
 header .name {
   color: #5f7470;
@@ -77,7 +77,7 @@ header .nav .nav__list .nav__list-item:last-child {
   align-self: center;
   color: #5f7470;
   text-decoration: none;
-  background-color: #e0e2db;
+  background-color: #f8f9f7;
   border: 2px solid #5f7470;
   border-radius: 5px;
   text-wrap: nowrap;
@@ -96,6 +96,8 @@ header .nav .nav__icon {
 }
 
 .skills {
+  display: flex;
+  flex-direction: column;
   margin-top: 80px;
   text-align: center;
   align-items: center;
@@ -165,6 +167,9 @@ header .nav .nav__icon {
 .card .card__content {
   padding-top: 40px;
 }
+.card .card__content .card__content-subtitle {
+  color: #8c9172;
+}
 .card .card__content .card__content-title {
   font-size: 36px;
   margin-bottom: 20px;
@@ -172,6 +177,7 @@ header .nav .nav__icon {
 }
 .card .card__content .card__content-text {
   margin-bottom: 25px;
+  color: #93a6a3;
 }
 .card .card__content .card__link-container {
   display: flex;
@@ -220,7 +226,7 @@ footer .footer__socials-container {
 }
 footer .footer__text {
   text-align: center;
-  color: #e0e2db;
+  color: #f8f9f7;
 }
 
 * {
@@ -232,10 +238,10 @@ footer .footer__text {
 body {
   color: #5f7470;
   font-family: "montserrat", "sans-serif";
-  background-color: #e0e2db;
+  background-color: #f8f9f7;
 }
 body h2 {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #889696 40%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #b8bdb5 40%);
   display: inline;
 }
 
