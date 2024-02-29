@@ -2,6 +2,8 @@
 @use './header.scss' as *;
 @use './variables.scss' as *;
 @use './skills.scss' as *;
+@use './projects.scss' as *;
+@use './components/project-card.scss' as *;
 
 * {
 	margin: 0;
