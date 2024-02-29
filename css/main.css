@@ -131,8 +131,16 @@ header .nav .nav__icon {
   border: 1px solid #00FFB2;
 }
 .card .card__hero {
-  width: 100%;
+  background-color: #d2d4c8;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card .card__hero .card__hero-image {
+  border-radius: 8px 8px 0 0;
+  width: 90%;
+  height: 80%;
   object-fit: cover;
 }
 .card .card__content {

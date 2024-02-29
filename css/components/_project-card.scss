@@ -1,3 +1,5 @@
+@use '../variables.scss' as *;
+
 .card {
 	max-width: 500px;
 	margin: 0 auto;
@@ -8,9 +10,18 @@
 	}
 
 	.card__hero {
-		width: 100%;
+		background-color: $secondary-color;
 		height: 300px;
-		object-fit: cover;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
+		.card__hero-image {
+			border-radius: 8px 8px 0 0;
+			width: 90%;
+			height: 80%;
+			object-fit: cover;
+		}
 	}
 
 	.card__content {
