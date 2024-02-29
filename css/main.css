@@ -65,6 +65,7 @@ header .name {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-wrap: nowrap;
 }
 header .nav .nav__list {
   list-style: none;
