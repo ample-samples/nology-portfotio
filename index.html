@@ -20,11 +20,18 @@
 		<h1 class="name">Todd Griffin<img src="assets/tag.svg" alt="tag"></h1>
 
 		<nav class="nav">
-			<svg class="nav__icon" id="nav__icon" width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<rect width="30" height="1" fill="#272643" />
-				<rect y="10" width="16" height="1" fill="#272643" />
-			</svg>
-				<span class="popuptext" id="myPopup">Popup text...</span>
+			<button class="nav__dropdown">
+				<svg class="nav__icon" onclick="myFunction()" id="nav__icon" width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="30" height="1" fill="#272643" />
+					<rect y="10" width="16" height="1" fill="#272643" />
+				</svg>
+				<ul id="navDropdown" class="nav__dropdown-container">
+					<li class="nav__list-item"><a href="#">Home</a></li>
+					<li class="nav__list-item"><a href="#">About</a></li>
+					<li class="nav__list-item"><a href="#">Projects</a></li>
+					<li class="nav__list-item"><a href="#">Get In Touch</a></li>
+				</ul>
+			</button>
 
 			<ul class="nav__list">
 				<li class="nav__list-item"><a href="#">Home</a></li>

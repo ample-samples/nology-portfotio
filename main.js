@@ -1,8 +1,19 @@
-document.getElementById("nav__icon").addEventListener("click", () => {
-	myFunction();
-});
-
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
 function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
+  document.getElementById("navDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav__icon')) {
+    var dropdowns = document.getElementsByClassName("nav__dropdown-container");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
