@@ -298,8 +298,8 @@ footer .footer__text {
     align-items: center;
     padding: 40px 100px;
   }
-  footer > * {
-    display: inline;
+  footer .footer__socials-container {
+    margin: auto 0;
   }
 }
 
