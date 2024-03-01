@@ -215,7 +215,7 @@ header .nav .nav__icon {
 }
 
 .card {
-  max-width: 500px;
+  max-width: min(80vw, 600px);
   margin: 0 auto;
   display: inline-block;
 }
