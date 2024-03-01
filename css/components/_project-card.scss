@@ -57,10 +57,13 @@
 					font-weight: bold;
 					margin-right: 10px;
 				}
-
 				margin-right: 35px;
 			}
 		}
-
+		@media (max-width: 400px) {
+			.card__content-title {
+				font-size: 28px;
+			}
+		}
 	}
 }

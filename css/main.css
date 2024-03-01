@@ -275,6 +275,11 @@ header .nav .nav__icon {
   font-weight: bold;
   margin-right: 10px;
 }
+@media (max-width: 400px) {
+  .card .card__content .card__content-title {
+    font-size: 28px;
+  }
+}
 
 .about {
   margin-top: 150px;
