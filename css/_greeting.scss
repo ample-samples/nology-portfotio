@@ -58,4 +58,16 @@
 			display: none;
 		}
 	}
+
+	@media screen and (max-width: 400px) {
+		.greeting__text {
+			&--primary {
+				font-size: 36px;
+			}
+
+			&--link {
+				padding: 15px 10px;
+			}
+		}
+	}
 }

@@ -51,6 +51,14 @@
     display: none;
   }
 }
+@media screen and (max-width: 400px) {
+  .greeting .greeting__text--primary {
+    font-size: 36px;
+  }
+  .greeting .greeting__text--link {
+    padding: 15px 10px;
+  }
+}
 
 .nav__dropdown {
   border: none;
