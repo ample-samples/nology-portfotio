@@ -1,37 +1,39 @@
 @use '../_variables.scss' as *;
 
 .nav__dropdown {
-  border: none;
-  cursor: pointer;
+	border: none;
+	cursor: pointer;
 	background-color: #00000000;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.nav__dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .nav__dropdown-container {
-  display: none;
-  position: absolute;
-  background-color: $quaternary-color;
-  min-width: 160px;
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: $secondary-color;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	border: 1px solid $quinary-color;
+	opacity: 0.8;
+	min-width: 160px;
+	z-index: 1;
 	right: 10px;
+
+	li {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+
+		a {
+			color: $quinary-color;
+			text-decoration: none;
+		}
+	}
 }
 
-/* Links inside the dropdown */
-.nav__dropdown-container li {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.show {
+	display: block;
 }
-
-/* Change color of dropdown links on hover */
-.nav__dropdown-container a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
