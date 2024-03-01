@@ -317,6 +317,11 @@ header .nav .nav__icon {
     grid-area: img;
   }
 }
+@media (max-width: 400px) {
+  .about .about__title {
+    font-size: 40px;
+  }
+}
 
 footer {
   margin-top: 40px;
