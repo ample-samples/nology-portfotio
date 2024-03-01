@@ -2,7 +2,7 @@
 
 footer {
 	margin-top: 40px;
-	background-color: darken($quinary-color, 30%); 
+	background-color: darken($quinary-color, 30%);
 	padding: 40px 0;
 	width: 100%;
 
@@ -16,5 +16,17 @@ footer {
 	.footer__text {
 		text-align: center;
 		color: $primary-color;
+	}
+
+	@media (min-width: 768px) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px 100px;
+
+		& > * {
+			display: inline;
+		}
 	}
 }
