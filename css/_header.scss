@@ -1,5 +1,6 @@
 @use './variables.scss' as *;
 @use './components/_boxed-button.scss' as *;
+@use './components/_nav-menu.scss' as *;
 
 header {
 	display: flex;
