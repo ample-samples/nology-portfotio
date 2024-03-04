@@ -45,12 +45,17 @@
 		}
 
 		.card__link-container{
-				display: flex;
-				align-items: center;
+			display: flex;
+			align-items: center;
 
 			.card__link {
 				display: flex;
 				align-items: center;
+
+				.card__link-img {
+					filter: brightness(0) saturate(100%) invert(46%) sepia(8%) saturate(741%) hue-rotate(119deg) brightness(91%) contrast(86%);
+				}
+
 				a {
 					text-decoration: none;
 					color: inherit;

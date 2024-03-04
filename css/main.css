@@ -247,6 +247,9 @@ header .nav .nav__icon {
   align-items: center;
   margin-right: 35px;
 }
+.card .card__content .card__link-container .card__link .card__link-img {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(8%) saturate(741%) hue-rotate(119deg) brightness(91%) contrast(86%);
+}
 .card .card__content .card__link-container .card__link a {
   text-decoration: none;
   color: inherit;
