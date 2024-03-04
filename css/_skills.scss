@@ -23,7 +23,7 @@
 		max-width: 950px;
 
 		img {
-			filter: red;
+			filter: brightness(0) saturate(100%) invert(46%) sepia(8%) saturate(741%) hue-rotate(119deg) brightness(91%) contrast(86%);
 			width: 80px;
 			height: 80px;
 		}
