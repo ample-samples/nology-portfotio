@@ -17,6 +17,10 @@ header {
 		align-items: center;
 		gap: 10px;
 		text-wrap: nowrap;
+
+		.name__img {
+			filter: brightness(0) saturate(100%) invert(46%) sepia(8%) saturate(741%) hue-rotate(119deg) brightness(91%) contrast(86%);
+		}
 	}
 
 	.nav {
