@@ -1,0 +1,14 @@
+@mixin img-decorator {
+		&:--fingerprint {
+			position: absolute;
+			height: 35%;
+			bottom: 80%;
+			right: 80%;
+		}
+		&:--squiggle {
+			position: absolute;
+			height: 25%;
+			bottom: 10%;
+			right: -20%;
+		}
+}
