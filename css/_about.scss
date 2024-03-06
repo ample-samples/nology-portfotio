@@ -1,3 +1,5 @@
+@use './components/_img-decorator.scss' as *;
+
 .about {
 	margin-top: 150px;
 	width: 100%;
@@ -12,18 +14,22 @@
 		font-size: 50px;
 	}
 
-	.about__profile-img {
-		margin: 70px auto;
-		height: 450px;
-		width: 80%;
-		max-width: 400px;
-		object-fit: cover;
+	.about__profile {
+		@include img-decorator;
+		margin: 0 10%;
+		.about__profile-img {
+			margin: 70px auto;
+			height: 450px;
+			width: 80%;
+			max-width: 400px;
+			object-fit: cover;
+		}
 	}
 
 	@media (min-width: 768px) {
 		grid-template-areas:
-		"title img"
-		"text img";
+			"title img"
+			"text img";
 		grid-template-columns: 3fr 2fr;
 		max-width: 1500px;
 		margin: 100px auto;
@@ -33,13 +39,17 @@
 			align-self: flex-end;
 			grid-area: title;
 		}
+
 		.about__text {
 			align-self: flex-start;
 			text-align: left;
 			grid-area: text;
 		}
-		.about__profile-img {
+
+		.about__profile {
 			grid-area: img;
+			margin-top: 20%;
+			margin-right: 10%;
 		}
 	}
 
